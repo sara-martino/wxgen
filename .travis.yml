@@ -23,6 +23,7 @@ before_install:
    - "sh -e /etc/init.d/xvfb start"
    - sudo apt-get -qq update
    - sudo apt-get install -y python-numpy python-scipy python-matplotlib python-mpltoolkits.basemap
+   - sudo apt-get install libgeos-dev libproj-dev
 
 install:
    - pip install .
